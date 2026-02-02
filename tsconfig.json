@@ -1,0 +1,30 @@
+{
+	"$schema": "https://www.schemastore.org/tsconfig",
+	"_version": "24.0.0",
+
+	"compilerOptions": {
+		"lib": [
+			"es2024",
+			"ESNext.Array",
+			"ESNext.Collection",
+			"ESNext.Error",
+			"ESNext.Iterator",
+			"ESNext.Promise"
+		],
+		"target": "es2024",
+		"allowImportingTsExtensions": true,
+		"noEmit": true,
+		"module": "nodenext",
+		"moduleResolution": "nodenext", // Alterado para combinar com o module: nodenext
+
+		// Configurações de Path Mapping
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./*"]
+		},
+
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true
+	}
+}
