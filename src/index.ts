@@ -13,7 +13,11 @@ export async function buildApp() {
 
 	// Register CORS
 	await app.register(fastifyCors, {
-		origin: ['http://localhost:5173', 'https://api.moviecatalog.com.br'],
+		origin: [
+			'http://localhost:5173',
+			'https://api.moviecatalog.com.br',
+			'https://moviecatalog.com.br',
+		],
 		methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
 	})
 
