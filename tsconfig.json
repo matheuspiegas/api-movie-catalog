@@ -12,6 +12,8 @@
 			"ESNext.Promise"
 		],
 		"target": "es2024",
+		"rootDir": ".",
+		"outDir": "./dist",
 		"allowImportingTsExtensions": true,
 		"noEmit": true,
 		"module": "nodenext",
@@ -25,6 +27,9 @@
 
 		"strict": true,
 		"esModuleInterop": true,
-		"skipLibCheck": true
-	}
+		"skipLibCheck": true,
+		"typeRoots": ["./node_modules/@types", "./@types"]
+		},
+		"include": ["src/**/*", "@types/**/*"],
+		"exclude": ["node_modules", "dist"]		
 }
