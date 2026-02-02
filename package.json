@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "tsx --env-file=.env --watch src/server.ts",
 		"build": "tsup src/server.ts --format esm --clean",
-		"start": "node --env-file=.env dist/server.js"
+		"start": "node dist/server.js"
 	},
 	"keywords": [],
 	"author": "",
